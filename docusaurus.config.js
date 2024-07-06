@@ -41,19 +41,17 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        docs: {
+        docs : {
           sidebarPath: './sidebars.js',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: 'https://github.com/kwonjh0406/kwonjh0406.github.io/tree/main/',
         },
         blog: {
-          showReadingTime: true,
+          showReadingTime: false,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: 'https://github.com/kwonjh0406/kwonjh0406.github.io/tree/main/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -70,6 +68,7 @@ const config = {
 				path: 'technology/frameworks',
 				routeBasePath: 'frameworks',
 				sidebarPath: require.resolve('./sidebars.js'),
+        editUrl: 'https://github.com/kwonjh0406/kwonjh0406.github.io/tree/main/',
 			},
 		],
     [
@@ -79,6 +78,7 @@ const config = {
 				path: 'technology/languages',
 				routeBasePath: 'languages',
 				sidebarPath: require.resolve('./sidebars.js'),
+        editUrl: 'https://github.com/kwonjh0406/kwonjh0406.github.io/tree/main/',
 			},
 		],
     [
@@ -88,6 +88,7 @@ const config = {
 				path: 'technology/tools',
 				routeBasePath: 'tools',
 				sidebarPath: require.resolve('./sidebars.js'),
+        editUrl: 'https://github.com/kwonjh0406/kwonjh0406.github.io/tree/main/',
 			},
 		],
     [
@@ -97,6 +98,7 @@ const config = {
 				path: 'computer-science/algorithm',
 				routeBasePath: 'algorithm',
 				sidebarPath: require.resolve('./sidebars.js'),
+        editUrl: 'https://github.com/kwonjh0406/kwonjh0406.github.io/tree/main/',
 			},
 		],
     [
@@ -106,6 +108,7 @@ const config = {
 				path: 'computer-science/computer-architecture',
 				routeBasePath: 'computer-architecture',
 				sidebarPath: require.resolve('./sidebars.js'),
+        editUrl: 'https://github.com/kwonjh0406/kwonjh0406.github.io/tree/main/',
 			},
 		],
     [
@@ -115,6 +118,7 @@ const config = {
 				path: 'computer-science/database',
 				routeBasePath: 'database',
 				sidebarPath: require.resolve('./sidebars.js'),
+        editUrl: 'https://github.com/kwonjh0406/kwonjh0406.github.io/tree/main/',
 			},
 		],
     [
@@ -124,6 +128,7 @@ const config = {
 				path: 'computer-science/datastructure',
 				routeBasePath: 'datastructure',
 				sidebarPath: require.resolve('./sidebars.js'),
+        editUrl: 'https://github.com/kwonjh0406/kwonjh0406.github.io/tree/main/',
 			},
 		],
     [
@@ -133,6 +138,7 @@ const config = {
 				path: 'computer-science/network',
 				routeBasePath: 'network',
 				sidebarPath: require.resolve('./sidebars.js'),
+        editUrl: 'https://github.com/kwonjh0406/kwonjh0406.github.io/tree/main/',
 			},
 		],
     [
@@ -142,6 +148,7 @@ const config = {
 				path: 'computer-science/operating-system',
 				routeBasePath: 'operating-system',
 				sidebarPath: require.resolve('./sidebars.js'),
+        editUrl: 'https://github.com/kwonjh0406/kwonjh0406.github.io/tree/main/',
 			},
 		],
 	],
