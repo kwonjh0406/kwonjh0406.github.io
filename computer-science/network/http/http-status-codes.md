@@ -44,3 +44,5 @@ sidebar_position: 1
 ### 5xx
 
 서버에 에러가 발생하였음을 의미합니다.
+
+출처: [RFC 2616](https://datatracker.ietf.org/doc/html/rfc2616#section-10)
