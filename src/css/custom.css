@@ -16,10 +16,6 @@
   src: url(/static/fonts/LINESeedKR-Bd.woff2) format('woff2');
 }
 
-.theme-doc-sidebar-container.docSidebarContainer_node_modules-\@docusaurus-theme-classic-lib-theme-DocRoot-Layout-Sidebar-styles-module {
-  border: none;
-}
-
 .footer {
   background-color: transparent;
   color: gray;

@@ -61,6 +61,16 @@ const config = {
   ],
 
   plugins: [
+    [
+			'@docusaurus/plugin-content-docs',
+			{
+				id: 'dbms',
+				path: 'technology/dbms',
+				routeBasePath: 'dbms',
+				sidebarPath: require.resolve('./sidebars.js'),
+        editUrl: 'https://github.com/kwonjh0406/kwonjh0406.github.io/tree/main/',
+			},
+		],
 		[
 			'@docusaurus/plugin-content-docs',
 			{
@@ -170,6 +180,10 @@ const config = {
             type: 'dropdown',
             position: 'left',
             items: [
+              {
+                to: 'dbms/intro',
+                label: 'DBMS',
+              },
               {
                 to: 'frameworks/intro',
                 label: '프레임워크',
