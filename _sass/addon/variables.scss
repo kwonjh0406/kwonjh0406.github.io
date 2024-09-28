@@ -1,0 +1,43 @@
+/*
+ * The SCSS variables
+ */
+
+/* sidebar */
+
+$sidebar-width: 260px !default; /* the basic width */
+$sidebar-width-large: 300px !default; /* screen width: >= 1650px */
+$sb-btn-gap: 0.8rem !default;
+$sb-btn-gap-lg: 1rem !default;
+
+/* other framework sizes */
+
+$topbar-height: 60px !default;
+$search-max-width: 200px !default;
+$footer-height: 5rem !default;
+$footer-height-large: 6rem !default; /* screen width: < 850px */
+$main-content-max-width: 1500px !default;
+$base-radius: 0.625rem !default;
+$back2top-size: 2.75rem !default;
+
+/* syntax highlight */
+
+$code-font-size: 0.85rem !default;
+$code-header-height: 2.25rem !default;
+$code-dot-size: 0.75rem !default;
+$code-dot-gap: 0.5rem !default;
+$code-icon-width: 1.75rem !default;
+
+/* fonts */
+
+@font-face {
+  font-family: 'LINESeed Regular';
+  src: url('/assets/woff2/LINESeedKR-Rg.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'LINESeed Bold';
+  src: url('/assets/woff2/LINESeedKR-Bd.woff2') format('woff2');
+}
+
+$font-family-base: 'LINESeed Regular' !default;
+$font-family-heading: 'LINESeed Bold' !default;
