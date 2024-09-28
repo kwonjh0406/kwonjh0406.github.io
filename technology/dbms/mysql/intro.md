@@ -11,7 +11,7 @@ CREATE USER '사용자명'@'접근위치' IDENTIFIED BY '비밀번호';
 접근위치의 종류
 1. localhost -> 로컬 호스트
 2. % -> 외부 환경
-3. ip 주소 -> 해당 ip 주소
+3. ip 주소 -> 해당 ip 주소f
 
 ## 사용자 삭제
 
