@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 권준형 포트폴리오
 
-## Getting Started
+Next.js로 제작한 포트폴리오입니다.
 
-First, run the development server:
+배포 주소: https://kwonjh0406.github.io/
+
+## 로컬 개발
+
+Node.js 24와 `package.json`에 지정된 pnpm 버전을 사용합니다.
+아래 명령은 `portfolio` 디렉터리에서 실행합니다.
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+pnpm install --frozen-lockfile
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 빌드 및 배포
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+pnpm lint
+pnpm build
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+`next.config.ts`의 `output: "export"` 설정으로 `out/`에 정적 HTML, CSS, JavaScript를 생성합니다.
+GitHub Pages에는 Next.js 서버가 없으므로 이미지는 `unoptimized: true`로 원본 정적 파일을 제공합니다.
+로컬에서 배포 결과를 확인하려면 `out/`을 정적 웹 서버로 제공하세요. `next start`는 정적 내보내기에 사용할 수 없습니다.
 
-## Learn More
+저장소의 **Settings → Pages → Build and deployment → Source**는 **GitHub Actions**로 설정합니다.
+`main` 브랜치에 푸시하면 저장소 루트의 `.github/workflows/deploy-pages.yml`이 다음 과정을 자동 실행합니다.
 
-To learn more about Next.js, take a look at the following resources:
+1. 고정된 의존성 설치, ESLint 검사, 정적 빌드
+2. `actions/upload-pages-artifact`로 `portfolio/out` 업로드
+3. `actions/deploy-pages`로 GitHub Pages 배포
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Actions 탭에서 **Deploy portfolio to GitHub Pages → Run workflow**로 수동 배포할 수도 있습니다.
+배포 인증은 GitHub가 제공하는 `GITHUB_TOKEN`과 OIDC를 사용하며 별도 개인 토큰을 저장할 필요가 없습니다.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 공식 문서
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [GitHub Pages 사용자 지정 워크플로](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages)
+- [Next.js 정적 내보내기](https://nextjs.org/docs/app/guides/static-exports)
